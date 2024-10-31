@@ -9,6 +9,10 @@ const authStore = useAuthStore();
 const router = useRouter();
 const route = useRoute();
 
+useHead({
+  title: 'Auth App',
+})
+
 const publicRoutes = new Set(['/auth/login', '/auth/register']);
 const isPublicRoute = ref(false);
 
